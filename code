@@ -1,0 +1,8 @@
+print("Hello Alexa!!")
+a = 5
+print(type(a))
+print("*** Calculation ***")
+my_income = 1000
+my_tax = 0.10
+annual_tax = my_income * my_tax
+print("Your annual tax is: "+ str(annual_tax))

@@ -1,0 +1,29 @@
+# disctionaries
+disc1 = {"name":"Himanshu","Gender":"Male","age":32}
+print(f"Your Disctionry is: {disc1}")
+d1 = disc1["Gender"]
+print(f"You are {d1}")
+
+#-------------------------------------------------------------
+# add list and inside disc
+my_disc1 = {"k1":["Himanshu","Roso","Riyo"],"k2":{"Apple":2.23,"orange":3.6,"kiwi":4.5,},"k3":"Start"}
+l1 = my_disc1["k1"][2].upper()
+print(f"Your name has been changed in upper {l1}")
+l2 = my_disc1["k2"]["kiwi"]
+print(f"Your fruit value is {l2}")
+my_disc1["k4"]="Stop"
+print(f"Append{my_disc1}")
+#-----------------------------------------------------------------------------------
+#tuples (this is immutable)
+t1 = ("Himanshu",2,2.5)
+print(f"Your tuple {t1}")
+t2 = t1.index("Himanshu")
+print(f"You are in this {t2}")
+#--------------------------------------------------------------------------
+#set there is always unique value
+set1 = set()
+set1.add(1)
+print(f"your set value is: {set1}")
+my_list = [1,2,3,4,4,5,6,7,8,8,9,2,1,3,]
+set2 = set(my_list)
+print(f"Your value has been changed {set2}")

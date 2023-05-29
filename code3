@@ -1,0 +1,30 @@
+#wih indexing change the name
+name = "Hisa"
+n1 = "L" + name[1::4] + "la"
+name1 = "Rost"
+n2 = "h" + name1[1:4]
+name2 = "thow"
+n3 = "s" + name2[1:4]
+print(f"{n1}\t{n2}\t{n3}")
+
+#List and tuples
+my_list = ["Himanshu","Rosto","Roberto","Gillis","Retro"]
+print(f"Your list names {my_list}")
+print("**** Reverse List ****")
+my_list.reverse()
+print(f"Your reverse list names {my_list}")
+print("**** Append List ****")
+my_list.append("Ana")
+my_list.append("Brown")
+my_list.append("Cate")
+my_list.append("Elegant")
+print(f"Your list names {my_list}")
+my_list.pop()
+my_list1 = my_list
+print(f"Your pop list names {my_list1}")
+print("*** sort list ***")
+my_list.sort()
+my_new_list = [1,34,2,4,67,23,98,10]
+my_new_list.sort()
+print(f"Your sort list names {my_new_list}")
+

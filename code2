@@ -1,0 +1,21 @@
+#slice and index, upper and lower, slice
+mystring = "Himanshu Sharma"
+print("Hello Mr.",mystring[8::1])
+print(mystring.split('s'))
+print(mystring.upper())
+print(mystring.lower())
+
+#--------------------------------------------
+#format code
+name = "Himanshu"
+age = 32
+designation = "S.E."
+print("Hello {r}! your age {a}! and You are {d}.".format(r=name,a=age,d=designation))
+#--------------other way----------------------------------------
+print(f"Hello {name} your age {age} and You are {designation}")
+#-----------------------------------------------------------------------------------
+divide = 1100/23
+print(f"Your result is: {divide:1.2f}")
+#-------other way-------------------------------
+print("Your result is: {r:1.2f}".format(r=divide))
+

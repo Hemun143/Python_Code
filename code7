@@ -1,0 +1,30 @@
+#--------------------- print list in loop with in list-------------------------
+list1 = [1,2,3,4,5]
+my_list = [x for x in list1]
+print(list1)
+
+#-------------------- direct intilize ----------------------
+my_list = [l for l in "Word"]
+print(my_list)
+
+#----------even number -----------------------------------
+my_list = [l for l in range(0,10,2)]
+print(my_list)
+
+#-------------------Power ---------------------------------------
+my_list = [num ** 4 for num in range(1,11,3) if num % 2 == 0]
+print(my_list)
+
+#--------------------------------- random number --------------------
+from random import randint
+number = randint(0, 100)
+print(f"Your magical number is : {number}")
+
+#---------------------- km in miles -------------------------
+kilometer = [10,23,34,45,56]
+result = [(km * 0.62137119) for km in kilometer]
+print(f"Your miles : {result[0]:1.2f} {result[1]:1.2f} {result[2]:1.2f} {result[3]:1.2f} {result[4]:1.2f}")
+#-------------------------miles in km----------------------------------
+miles = [10,23,34,45,56]
+result = [(miles * 1.609344) for miles in kilometer]
+print(f"Your Kilometer : {result[0]:1.2f} {result[1]:1.2f} {result[2]:1.2f} {result[3]:1.2f} {result[4]:1.2f}")

@@ -1,0 +1,35 @@
+#----------------------program logical with if and loop ------------------------------
+print("Hello Let's Create the Marksheet" )
+s1 = int(input("Please enter the Physics subject marks: "))
+s2 = int(input("Please enter the Chemistry subject marks: "))
+s3 = int(input("Please enter the Biology subject marks: "))
+s4 = int(input("Please enter the English subject marks: "))
+s5 = int(input("Please enter the Computer subject marks: "))
+my_store = [s1,s2,s3,s4,s5]
+my_score = [x for x in my_store]
+if my_score[0] < 33: 
+    print (f"You are fail in Physics subject :{my_score[0]} ")
+if my_score[1] < 33:
+    print (f"You are fail in Chemistry subject: {my_score[1]}")
+if my_score[2] < 33:
+    print (f"You are fail in Biology subject: {my_score[2]}")   
+if my_score[3] < 33:
+    print (f"You are fail in English subject: {my_score[3]}")  
+if my_score[4] < 33:
+    print (f"You are fail in Computer subject: {my_score[4]}")  
+total = s1 + s2 + s3 + s4 + s5
+print(f"Your Marks out of {total}/500: ")
+result = total / 500 * 100
+print(f"Your Precentage got in: {result:1.2f}")
+if result > 80:
+    print("You are are Extra Ordinary!!")
+elif result > 60 and result <= 79:
+    print("You are ordinary")
+elif result > 45 and result <= 59:
+    print("You are good")
+elif result > 33 and result <= 44:
+    print("You are ok")
+elif result == 33:
+    print("You are Pass")
+else:
+    print("You are fail")

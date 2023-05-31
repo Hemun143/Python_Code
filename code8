@@ -1,19 +1,19 @@
 #-----------------------function------------------------
 def my_fisrt_function():
-    num = float(input("Enter the temperature :"))
+    num = float(input("Enter the temperature celsius :"))
     temp_fahrenheit = (num * 9/5) + 32
     temp_celsius = (temp_fahrenheit - 32) * 5/9
     temp_kelvin = (temp_fahrenheit - 32) * 5/9 + 273.15
     my_temp = (temp_fahrenheit,temp_celsius,temp_kelvin)
     my_temp_store=[x for x in my_temp]
     if my_temp_store[0]> 100 or my_temp_store[0] > 100 or my_temp_store[0]> 100 :
-        print (f"You are in Hot weather: {my_temp_store[0]:1.2f} F. && {my_temp_store[1]:1.2f} C. && {my_temp_store[2]:1.2f} K")
+        print (f"You are in Hot weather: {my_temp_store[0]:1.2f}F && {my_temp_store[1]:1.2f}C && {my_temp_store[2]:1.2f}K")
     elif ((my_temp_store[0] >= 70 and my_temp_store[0] <= 65) or (my_temp_store[1] >= 70 and my_temp_store[1] <= 65) or (my_temp_store[2] >= 70 and my_temp_store[2] <= 65) ):
-        print(f"You are in warm weather : {my_temp_store[0]:1.2f} F. && {my_temp_store[1]:1.2f} C. && {my_temp_store[2]:1.2f} K")
+        print(f"You are in warm weather : {my_temp_store[0]:1.2f}F && {my_temp_store[1]:1.2f}C && {my_temp_store[2]:1.2f}K")
     elif ((my_temp_store[0] >= 40 and my_temp_store[0] <= 33) or (my_temp_store[1] >= 40 and my_temp_store[1] <= 33) or (my_temp_store[2] >= 40 and my_temp_store[2] <= 33) ):
-        print(f"You are in moderate weather : {my_temp_store[0]:1.2f} F. && {my_temp_store[1]:1.2f} C. && {my_temp_store[2]:1.2f} K")
+        print(f"You are in moderate weather : {my_temp_store[0]:1.2f}F && {my_temp_store[1]:1.2f}C && {my_temp_store[2]:1.2f}K")
     else:
-        print(f"You are in cool weather : {my_temp_store[0]:1.2f}F. && {my_temp_store[1]:1.2f}C. && {my_temp_store[2]:1.2f}K")
+        print(f"You are in cool weather : {my_temp_store[0]:1.2f}F. && {my_temp_store[1]:1.2f}C && {my_temp_store[2]:1.2f}K")
     return my_temp_store
 print ("Your weather culture is in your area: {w}".format(w = my_fisrt_function()))
       

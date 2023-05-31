@@ -1,0 +1,19 @@
+#-------------------------- tuple unpacking --------------------
+my_list = [("Apple",300),("kiwi",400),("Orange",500)]
+for ticker,price in my_list:
+    print("Your Item in tuple list: {s} - {p} Rs".format(s=ticker,p=price+(0.25*price)))
+#--------------------------------------------------------------------------
+#------------------ unpacking tuples----------------------------------
+work_hour = [("Himanshu",100),("Rama",200),("Kashish",400)]
+def employee_check(work_hour):
+    current_hours = 0
+    employee_name = ''
+    for employee,hours in work_hour:
+        if hours > current_hours:
+           current_hours = hours
+           employee_name = employee
+    return (employee_name,current_hours )
+# result = employee_check(work_hour)
+name,hours  = employee_check(work_hour)
+# hours= employee_check()
+print(f"!! Emplyoee of the month !! Goes to :- Employee Name: {name} and hours is: {hours}H")

@@ -7,13 +7,14 @@ class Mybase():
         print ("your name is: {} and your age: {} and exp is:  {}".format(self.name,self.age,number))
 
 my_class = Mybase(name = "Himanshu", age=32, designation="B.D.")
-result = my_class.e_experience(number = 9)
-print(result)
+# result = 
+my_class.e_experience(number = 9)
+# 
 mylist = [my_class.name,my_class.age,my_class.designation]
 mytup = (my_class.name,my_class.age,my_class.designation)
 mydisc = {my_class.name,my_class.age,my_class.designation}
-print(mylist)
-print(mytup)
-print(mydisc)
+# print(mylist)
+# print(mytup)
+# print(mydisc)
 
     

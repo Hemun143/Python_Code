@@ -1,0 +1,19 @@
+class Mybase():
+    def __init__(self,name,age,designation):
+        self.name = name
+        self.age = age
+        self.designation = designation
+    def e_experience(self,number):
+        print ("your name is: {} and your age: {} and exp is:  {}".format(self.name,self.age,number))
+
+my_class = Mybase(name = "Himanshu", age=32, designation="B.D.")
+result = my_class.e_experience(number = 9)
+print(result)
+mylist = [my_class.name,my_class.age,my_class.designation]
+mytup = (my_class.name,my_class.age,my_class.designation)
+mydisc = {my_class.name,my_class.age,my_class.designation}
+print(mylist)
+print(mytup)
+print(mydisc)
+
+    
